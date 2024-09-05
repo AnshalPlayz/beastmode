@@ -1,41 +1,173 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('minecraft-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  color: #ffcc00;
+}
+
+/* Header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
 }
 
-nav ul {
-    list-style:   
- none;
-    margin: 0;
-    padding: 0;
+header .logo h1 {
+  font-size: 2rem;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
+header nav ul {
+  list-style: none;
+  display: flex;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color:   
- #fff;
+header nav ul li {
+  margin-left: 20px;
 }
 
-main {
-    padding: 20px;
+header nav ul li a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffcc00;
 }
 
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: url('minecraft-hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero-text {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.hero .cta-btn {
+  background-color: #ff4500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.hero .cta-btn:hover {
+  background-color: #e63e00;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Features Section */
+.features-section {
+  padding: 60px 20px;
+  background-color: rgba(50, 50, 50, 0.9);
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.feature-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Join Section */
+.join-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.join-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.join-section .cta-btn {
+  background-color: #32cd32;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.join-section .cta-btn:hover {
+  background-color: #2eb82e;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;   
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
 
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: #ffcc00;
 }
